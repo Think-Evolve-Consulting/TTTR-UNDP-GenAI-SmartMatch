@@ -14,8 +14,8 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.document_loaders import TextLoader
 from langchain.memory import ConversationBufferMemory
 import os
-os.OPENAI_API_KEY ="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"
-openai_api_key = "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"
+os.OPENAI_API_KEY ="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+openai_api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 metadata_filepath = 'Digital X Solution Catalog Metadata for Hack to the Rescue.xlsx'
 def display_json(json_str):
   for key in json.loads(json_str).keys():
@@ -47,7 +47,7 @@ chroma_client = chromadb.Client()
 
 # Add the content vectors
 embeds = []
-embeddings = OpenAIEmbeddings(openai_api_key = "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")
+embeddings = OpenAIEmbeddings(openai_api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
 total_pages = []
 for doc in json_data_strings:
