@@ -13,7 +13,7 @@ openai.api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 metadata_filepath = 'Digital X Solution Catalog Metadata for Hack to the Rescue.xlsx'
 def create_pinecone_index(index_name,MODEL):
    
-	pinecone.init(api_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",environment="northamerica-northeast1-gcp",  )    
+	pinecone.init(api_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",environment="xxxxxxxxxxxxxxxxxxx",  )    
 	res = openai.Embedding.create(input=["Sample document text goes here",], engine=MODEL)
 	embeds = [record['embedding'] for record in res['data'][0:1]]
 	index = None	
