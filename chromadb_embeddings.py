@@ -7,8 +7,8 @@ import openai_functions
 from langchain.document_loaders import TextLoader
 import time
 import os
-os.OPENAI_API_KEY ="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"
-openai_api_key = "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"
+os.OPENAI_API_KEY ="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+openai_api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 metadata_filepath = 'Digital X Solution Catalog Metadata for Hack to the Rescue.xlsx'
 def display_json(json_str):
   for key in json.loads(json_str).keys():
