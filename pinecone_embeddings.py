@@ -8,12 +8,12 @@ from collections import Counter
 from tqdm import tqdm
 import tiktoken
 import metadata_embeddings
-os.OPENAI_API_KEY ="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"
-openai.api_key = "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"
+os.OPENAI_API_KEY ="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+openai.api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 metadata_filepath = 'Digital X Solution Catalog Metadata for Hack to the Rescue.xlsx'
 def create_pinecone_index(index_name,MODEL):
    
-	pinecone.init(api_key="c09dd33c-84c6-4feb-8e70-3204ff064939",environment="northamerica-northeast1-gcp",  )    
+	pinecone.init(api_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",environment="northamerica-northeast1-gcp",  )    
 	res = openai.Embedding.create(input=["Sample document text goes here",], engine=MODEL)
 	embeds = [record['embedding'] for record in res['data'][0:1]]
 	index = None	
