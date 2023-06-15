@@ -12,8 +12,8 @@ import time
 import pinecone_embeddings
 from pinecone_embeddings import *
 metadata_filepath = 'Digital X Solution Catalog Metadata for Hack to the Rescue.xlsx'
-os.OPENAI_API_KEY ="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"
-openai_api_key = "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"
+os.OPENAI_API_KEY ="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+openai_api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 def extract_data_from_headlines(pdf_file):
     with open(pdf_file, 'rb') as file:
         pdf_reader = PyPDF2.PdfReader(file)
